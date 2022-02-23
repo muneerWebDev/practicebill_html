@@ -1,0 +1,41 @@
+<!-- siteHeader  -->
+@@include('template-parts/header.html')
+
+
+<div class="uk-height-1-1 uk-flex">
+
+    @@include('template-parts/sidebar-dashboard.html', { "nav": 'schedule' })
+
+    <main class="dashboard-area">
+
+        <!-- this wrap is only for schedule page  -->
+        <div class="schedule-special-wrap">
+
+
+            <div class="event-list-calender-wrap">
+                <div id="calender-date-select"></div>
+                <div id="calender-event-list"></div>
+            </div>
+
+            <div class="dashboard-schedule-inner-wrap">
+                <!-- dasboard header  -->
+                <div class="dashboard-header uk-flex">
+                    @@include('template-parts/dasboard-partials/header.html', { 
+                        "enable_search" : true
+                    })
+                </div>
+
+                <!-- dasboard content  -->
+                <div class="dashboard-content">
+                    @@include('template-parts/dasboard-partials/schedule.html')
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- footer  -->
+@@include('template-parts/footer.html')

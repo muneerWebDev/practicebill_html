@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-size: 0.625rem; //10px
+    overflow: hidden;
+}
+
+.uk-light {
+    background: $color-primary;
+}
+
+a {
+    transition: 0.3s;
+}
+
+.uk-modal-close,
+.edit-btn{
+    cursor: pointer;
+    color: $color-light;
+    border: none;
+    padding: 0;
+    background: transparent;
+
+    & + .uk-button-primary{
+        margin-left: 20px;
+    }
+}
+
+.uk-form-label{
+    font-size: $font-size-medium;
+}
+
+
+// scrollbar
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: darken($color-secondary-light, 10%);
+}
+::-webkit-scrollbar-thumb {
+    background: $color-secondary;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: darken($color-secondary, 10%);
+}
+
+.uk-input, .uk-select, .uk-textarea{
+    border-radius: 3px;
+    border: 1px solid $border-color;
+    font-size: $font-size-large;
+}
+
+.uk-form-label{
+    font-size: $font-size-large;
+}
+
+.uk-button-primary{
+    background: $color-primary;
+    color: white;
+    border-radius: 5px;
+}
+
+.uk-button{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: $font-size-large;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+.uk-subnav > * > :first-child{
+    font-size: $font-size-large;
+    text-transform: capitalize;
+}

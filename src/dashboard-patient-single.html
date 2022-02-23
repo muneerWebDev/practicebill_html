@@ -1,0 +1,35 @@
+<!-- siteHeader  -->
+@@include('template-parts/header.html')
+
+
+<div class="uk-height-1-1 uk-flex">
+
+    @@include('template-parts/sidebar-dashboard.html', { "nav": 'schedule' })
+
+    <main class="dashboard-area">
+
+        <!-- dasboard header  -->
+        <div class="dashboard-header uk-flex">
+            @@include('template-parts/dasboard-partials/header.html', {
+            "links" : ["Patients","#457609","Demographic"]
+            })
+        </div>
+
+        <!-- dasboard content  -->
+        <div class="dashboard-content">
+            <div class="patient-single-area">
+                @@include('template-parts/dasboard-partials/patient/patient-single-nav.html', { 
+                    "active": 'Demographic'
+                 })
+                 @@include('template-parts/dasboard-partials/patient/patient-demographic.html', { 
+                     "active": 'Demographic'
+                  })
+            </div>
+        </div>
+
+    </main>
+
+</div>
+
+<!-- footer  -->
+@@include('template-parts/footer.html')

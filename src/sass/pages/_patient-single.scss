@@ -1,0 +1,208 @@
+.patient-single-area {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+
+    .top-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .edit-btn {
+            font-weight: 700;
+            color: $color-primary;
+            font-size: $font-size-large;
+        }
+    }
+}
+
+.patient-single-navigation {
+    padding: 15px 10px;
+    border: 1px solid $border-color;
+    border-width: 1px 1px 0 0;
+    width: 217px;
+    height: 100%;
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            a {
+                display: block;
+                padding: 14px 10px;
+                font-size: $font-size-large;
+                color: $color-dark;
+                border-radius: 11px;
+                font-weight: 600;
+                .uk-icon {
+                    margin-right: 15px;
+                    font-size: $font-size-small;
+                    svg {
+                        width: 18px;
+                    }
+                }
+
+                &.active {
+                    background: $event-color-4;
+                    box-shadow: 0px 3px 4px rgba(0, 154, 241, 0.31);
+                    color: white;
+                }
+            }
+        }
+    }
+
+    & + div {
+        width: calc(100% - 217px);
+        background: $color-lighter;
+        padding: 12px 20px;
+    }
+}
+
+.patient-single-demographic {
+    .patient-info-overview {
+        padding: 15px 25px;
+        border-radius: 5px;
+        display: flex;
+        background: white;
+        justify-content: space-between;
+        border: 1px solid #eff3ff;
+
+        & > div {
+            &:not(:last-child) {
+                padding-right: 35px;
+            }
+        }
+
+        .image {
+            align-self: center;
+            img {
+                width: 100%;
+            }
+            position: relative;
+            .camera {
+                position: absolute;
+                bottom: 20%;
+                right: 12%;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 50%;
+                background: white;
+                color: $color-dark;
+                padding: 0;
+                border: none;
+                cursor: pointer;
+                &:hover{
+                    background: $color-lighter;
+                }
+                svg {
+                    width: 15px;
+                }
+            }
+        }
+
+        .info-colum {
+            &:nth-child(3) {
+                margin: 0 auto;
+            }
+            .patient-name {
+                font-weight: 600;
+                color: $event-color-4;
+                margin: 0;
+            }
+
+            p:not(.label),li{
+                color: $color-darker;
+                font-weight: 500;
+                margin-top: 0;
+            }
+
+            .icon-list {
+                li {
+                    display: flex;
+
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                    .uk-icon {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .patient-info-tabs{
+        background: white;
+        border-radius: 5px;
+        overflow: hidden;
+        .uk-subnav{
+            padding: 10px 15px 0;
+            border-bottom: 1px solid $border-color;
+
+            li {
+
+                a{
+                    padding: 10px 0;
+                    color: $color-dark;
+                    font-weight: 600;
+                }
+
+                &.uk-active,&:hover{
+                    a{
+                        color: $event-color-4;
+                        background: transparent;
+                    }
+                }
+
+                &+ li{
+                    margin-left: 45px;
+                }
+            }
+        }
+
+        .uk-switcher{
+            margin: 0;
+            padding: 15px;
+        }
+    }
+}
+
+.info-item {
+    p {
+        margin-top: 0;
+        &:not(.label) {
+            color: $color-dark;
+            font-weight: 600;
+        }
+        &.label {
+            margin-bottom: 2px;
+            color: $color-light;
+        }
+    }
+}
+
+.info-row{
+    display: flex;
+    flex-wrap: wrap;
+
+    &+.info-row{
+        margin-top: 25px;
+    }
+    .info-item{
+        margin-right: 10%;
+    }
+}
+
+.info-group-table{
+    display: table;
+    .info-row{
+        display: table-row;
+        .info-item{
+            display: table-cell;
+            white-space: nowrap;
+            padding: 0 140px 25px 0;
+        }
+    }
+}

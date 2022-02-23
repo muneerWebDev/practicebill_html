@@ -1,0 +1,22 @@
+@import '../assets/fonts/montserrat/stylesheet';
+
+@import '../assets/fonts/poppins/stylesheet';
+
+@import "components/variables";
+
+@import "node_modules/uikit/src/scss/variables-theme.scss";
+
+@import "node_modules/uikit/src/scss/mixins-theme.scss";
+
+@import "components/mixins";
+
+@import "node_modules/uikit/src/scss/uikit-theme.scss";
+
+@import "plugins/tui-calendar.min";
+
+@import "components/schedule-calender-customize";
+
+@import "components/elements";
+
+@import "components/global";
+@import "pages/patient-single";

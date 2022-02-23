@@ -1,0 +1,152 @@
+<div id='scheduleCalender'></div>
+
+<!-- This is the modal -->
+<div id="schedule-modal" class="schedule-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <div class="uk-flex uk-flex-center uk-margin">
+            <h4 class="uk-margin-remove-bottom">Schedule Appointment</h4>
+            <button class="uk-modal-close uk-margin-auto-left" type="button"><span
+                    uk-icon="icon: close"></span></button>
+        </div>
+        <div class="modal-content">
+            <form class="uk-form-horizontal">
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Name"><span uk-icon="icon: user"></span> Name</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="schedule-modal-Name" type="text" placeholder="Patient name">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Address"><span uk-icon="icon: home"></span> Address</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="schedule-modal-Address" type="text" placeholder="Address">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Phone"><span uk-icon="icon: receiver"></span> Phone</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="schedule-modal-Phone" type="number" placeholder="+91">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Date"><span uk-icon="icon: calendar"></span> Date</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input uk-width-auto" id="schedule-modal-Date" type="date">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Time"><span uk-icon="icon: clock"></span> Time</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input uk-width-auto" id="schedule-modal-Time-start" type="time" min="00:00:00" max="00:00:00">
+                        <input class="uk-input uk-width-auto" id="schedule-modal-Time-end" type="time" min="00:00:00" max="00:00:00">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Status"><span uk-icon="icon: move"></span> Status</label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select" id="schedule-patient-status">
+                            <option value="">Status</option>
+                            <option value="new">New Patient</option>
+                            <option class="existing">Existing Patient</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Note"><span uk-icon="icon: file-edit"></span> Note</label>
+                    <div class="uk-form-controls">
+                        <textarea id="schedule-modal-Note" class="uk-textarea" placeholder="Details..."></textarea>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="uk-text-right uk-margin uk-margin-remove-bottom">
+                <button class="uk-button uk-button-default uk-modal-close">cancel</button>
+            <button class="uk-button uk-button-primary" id="schedule">Schedule</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="schedule-view-modal" class="schedule-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <div class="uk-flex uk-flex-center uk-margin">
+            <h4 class="uk-margin-remove-bottom">Schedule Appointment</h4>
+            <button class="edit-btn uk-margin-auto-left" type="button"><span
+                    uk-icon="icon: pencil"></span></button>
+                    <button class="uk-modal-close" type="button"><span
+                            uk-icon="icon: close"></span></button>
+        </div>
+        <div class="modal-content">
+            <form class="uk-form-horizontal">
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Name"><span uk-icon="icon: user"></span> Name</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="schedule-modal-Name" type="text" value="Muhammed Muneer P A" disabled="disabled">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Address"><span uk-icon="icon: home"></span> Address</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="schedule-modal-Address" type="text" value="Bolghatty, Kochi" disabled="disabled">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Phone"><span uk-icon="icon: receiver"></span> Phone</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="schedule-modal-Phone" type="number" value="7012388319" disabled="disabled">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Date"><span uk-icon="icon: calendar"></span> Date</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input uk-width-auto" id="schedule-modal-Date" type="date" value="1995-07-24" disabled="disabled">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Time"><span uk-icon="icon: clock"></span> Time</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input uk-width-auto" id="schedule-modal-Time-start" type="time" min="00:00:00" max="00:00:00"value="13:00" disabled="disabled">
+                        <input class="uk-input uk-width-auto" id="schedule-modal-Time-end" type="time" min="00:00:00" max="00:00:00" value="13:30" disabled="disabled">
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Status"><span uk-icon="icon: move"></span> Status</label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select" id="schedule-patient-status" disabled="disabled">
+                            <option value="">Status</option>
+                            <option value="new" selected>New Patient</option>
+                            <option class="existing">Existing Patient</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="uk-margin-small">
+                    <label class="uk-form-label" for="schedule-modal-Note"><span uk-icon="icon: file-edit"></span> Note</label>
+                    <div class="uk-form-controls">
+                        <textarea id="schedule-modal-Note" class="uk-textarea" disabled="disabled">Chronic Migrain</textarea>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="uk-text-right uk-margin uk-margin-remove-bottom">
+                <button class="uk-button uk-button-default uk-modal-close">cancel</button>
+            <button class="uk-button uk-button-primary" id="register">Patient Registration</button>
+            </div>
+        </div>
+    </div>
+</div>

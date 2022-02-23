@@ -1,0 +1,28 @@
+@@if (context.enable_search && context.enable_search !== false) {
+<form class="uk-search uk-search-default">
+    <span uk-search-icon></span>
+    <input class="uk-search-input" type="search" placeholder="Search patients, appointems etc...">
+</form>
+}
+
+@@if (context.links) {
+    <ul class="dashboard-head-nav">
+        @@for (var i = 0; i < links.length; i++) {
+          <li><a href="#">`+links[i]+`</a></li>
+        }
+        </ul>
+}
+
+<div class="uk-inline uk-margin-auto-left notification">
+    <button class="uk-button uk-button-default uk-padding-remove" type="button"><span uk-icon="icon: bell"></span> <span
+            class="count">20</span></button>
+    <div uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </div>
+</div>
+<div class="uk-inline profile">
+    <button class="uk-button uk-button-default uk-padding-remove" type="button">
+        <div class="profile"><span class="profile-image"><img src="img/profile.png" alt=""></span><span
+                class="profile-name">Jane Cooper</span><span uk-icon="icon:  chevron-down"></span></div>
+    </button>
+    <div uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+</div>

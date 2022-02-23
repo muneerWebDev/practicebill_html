@@ -1,0 +1,152 @@
+$color-primary: #1A0C8E;
+$color-secondary: #1FB3E2;
+$color-secondary-light: #D7F0FF;
+
+$color-dark: #485460;
+$color-darker: #161616;
+$color-darkest: #000;
+
+$color-light: #9EB2C0;
+$color-lighter: #F7F9FA;
+
+$border-color: #E5E5E5;
+
+//
+// Colors
+//
+
+$global-color: $color-dark;
+$global-emphasis-color: $color-dark;
+$global-muted-color: $color-light;
+
+$global-link-color: $color-primary;
+$global-link-hover-color: darken($color-primary, 10%);
+$global-primary-background: $color-primary;
+
+//
+// Inverse
+//
+
+$global-inverse-color: #fff;
+$inverse-global-color: $global-inverse-color;
+$inverse-global-muted-color: rgba($global-inverse-color, 0.6);
+
+//
+// Backgrounds
+//
+
+// $global-background:                              $color-secondary;
+
+$global-muted-background: $color-secondary-light;
+$global-primary-background: $color-primary;
+$global-secondary-background: $color-secondary;
+
+$global-success-background: #32d296;
+$global-warning-background: #faa05a;
+$global-danger-background:  #F14747;
+
+
+$event-color-1: #274ADB;
+$event-color-2: #7249F5;
+$event-color-3: #123191;
+$event-color-4: #009AF1;
+$event-color-5: #D29F0B;
+
+//
+// Container
+//
+
+$container-max-width: 96.7%;
+$global-medium-gutter: 30px;
+
+//
+// Borders
+//
+
+$global-border-width: 1px;
+$global-border: $color-secondary-light;
+$border-secondary: rgba(112, 112, 112, 0.5);
+
+$inverse-close-color: white;
+
+// $theme-border-radius: 10px;
+
+//
+// Base
+//
+
+$global-font-family: 'Montserrat';
+$secondary-font-family: 'Poppins';
+$base-link-hover-text-decoration: none;
+$base-link-hover-color: $color-secondary; 
+$base-margin-vertical: 10px;
+$link-text-hover-color: $color-secondary;
+$base-list-padding-left: 18px;
+$base-em-color: $color-secondary;
+
+//
+// Navbar
+//
+
+$navbar-nav-item-color: $color-secondary;
+$navbar-nav-item-font-weight: bold;
+$navbar-nav-item-font-size: 1rem; //16px;
+$navbar-nav-item-hover-color: $color-secondary;
+
+//
+// tab switcher nav
+//
+
+$subnav-pill-item-padding-vertical:              0 ;
+$subnav-pill-item-padding-horizontal:            0;
+$subnav-pill-item-active-background: transparent;
+$subnav-pill-item-active-color: $color-primary;
+
+
+//
+// uk search
+//
+$search-default-width: 292px;
+
+// *** font sizes *** //
+
+//
+// Heading
+//
+$base-heading-font-weight: 600;
+$base-heading-color: $color-darkest;
+
+$base-h1-font-size: 2.5rem; //40px;
+$base-h1-font-size-m: 2.5rem; //40px;
+$base-h2-font-size: 1.875rem; //30px;
+$base-h2-font-size-m: 1.875rem; //30px;
+$base-h3-font-size-m: 20px;
+$base-h4-font-size: 15px;
+
+$font-size-smallest : 6px;
+$font-size-small : 8px;
+$font-size-medium : 10px;
+$font-size-large : 12px;
+
+$button-font-size: $font-size-large;
+
+
+//
+//global stylings
+//
+$border-radius: 6px;
+$box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.12);
+
+//
+//modal
+//
+$modal-body-padding-vertical: 15px;
+$modal-body-padding-horizontal: 20px;
+
+//
+//form
+//
+
+$form-horizontal-label-width: 100px;
+$form-horizontal-controls-margin-left: 115px;
+$form-horizontal-label-margin-top: 10px;
